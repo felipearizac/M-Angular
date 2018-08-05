@@ -29,7 +29,7 @@ export class ContainerComponent {
 
                     this.containerJson = resultado;
 
-                    console.log(this.containerJson);
+                    console.log(this.containerJson[0]["name"]);
 
                },
                error => {

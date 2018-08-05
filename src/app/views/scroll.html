@@ -3,100 +3,24 @@
 	=============================================-->
 	<h1 class= "row titulos" id="inicioScroll">Films</h1>
 
-	<div id="scroll">
-		<article class="row">
-
-			<div class="col-lg-1 col-md-2 col-sm-1 col-xs-0">
-				<br>
-			</div> 
-			<aside class="col-lg-2 col-md-8 col-sm-10 col-xs-12">
-
-				<div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
-					<h1>Lorem Ipsum</h1>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla animi nisi sequi explicabo laudantium atque ratione porro?</p>
-				</div>
-
-				<button>Leer mas</button>
-			</aside>
-
-			<div class="col-lg-1 col-md-2 col-sm-1 col-xs-0">
-				<br>
-			</div> 
-			<aside class="col-lg-2 col-md-8 col-sm-10 col-xs-12">
-
-				<div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
-					<h1>Lorem Ipsum</h1>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla animi nisi sequi explicabo laudantium atque ratione porro?</p>
-				</div>
-
-				<button>Leer mas</button>
-			</aside>
-		
-			<div class="col-lg-1 col-md-2 col-sm-1 col-xs-0">
-				<br>
-			</div> 
-			<aside class="col-lg-2 col-md-8 col-sm-10 col-xs-12">
-				<div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
-					<h1>Lorem Ipsum</h1>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla animi nisi sequi explicabo laudantium atque ratione porro?</p>
-				</div>
-
-				<button>Leer mas</button>
-			</aside>
-              
-			
-          </article>
-          
-          <article class="row">
-
-			<div class="col-lg-1 col-md-2 col-sm-1 col-xs-0">
-				<br>
-			</div> 
-			<aside class="col-lg-2 col-md-8 col-sm-10 col-xs-12">
-		
-				<div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
-					<h1>Lorem Ipsum</h1>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla animi nisi sequi explicabo laudantium atque ratione porro?</p>
-				</div>
-
-				<button>Leer mas</button>
-			</aside>
-
-			<div class="col-lg-1 col-md-2 col-sm-1 col-xs-0">
-				<br>
-			</div> 
-			<aside class="col-lg-2 col-md-8 col-sm-10 col-xs-12">
-
-				<div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
-					<h1>Lorem Ipsum</h1>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla animi nisi sequi explicabo laudantium atque ratione porro?</p>
-				</div>
-
-				<button>Leer mas</button>
-			</aside>
-		
-			<div class="col-lg-1 col-md-2 col-sm-1 col-xs-0">
-				<br>
-			</div> 
-			<aside class="col-lg-2 col-md-8 col-sm-10 col-xs-12">
-
-				<div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
-					<h1>Lorem Ipsum</h1>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla animi nisi sequi explicabo laudantium atque ratione porro?</p>
-				</div>
-
-				<button>Leer mas</button>
-			</aside>
-			<div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
-				<br>
-               </div>
-               
-			
-		</article>
+	<div id="scroll" class="row" >
+			<div id="cuadro"  *ngFor="let films of FilmJson">
+				<div class="col-lg-1 col-md-2 col-sm-1 col-xs-0">
+					<br>
+				</div> 
+				
+				<aside class="col-lg-9 col-md-8 col-sm-10 col-xs-12">
+							
+					<div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
+						<h1>{{films.title}}</h1>
+						<p>{{films.producer}}</p>
+						<p>{{films.release_date}}</p>
+						<div id="description">{{films.description}}</div>
+						
+					</div>
+				</aside>
+				
+		</div>
+						
+				
 	</div>

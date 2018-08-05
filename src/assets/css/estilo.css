@@ -249,54 +249,59 @@ span{
 	color: #fff;
 	display: none;
 }
-
 /*=============================================
 		Efecto scroll
 =============================================*/
 
-#scroll article aside{
-	border:1px solid silver;
-	margin: 40px auto;
-	width: 20%;
-	left: 40px;
+#scroll #cuadro {
+	width: 30%;
+	height: 60%;
 	display: inline-block;
+	
+}
+
+#scroll #cuadro aside{
+	border:0.5px solid silver;
+	margin: 10px;
+	width: 80%;
+	left: 100px;
 	position: relative;
 	background: white;
-	height: auto;
+	height: 400px;
 	overflow: hidden;
 
 }
 
+#scroll #cuadro aside div{
+	width: 90%;
+	position: absolute;
+	left: 20px;
+	right: 0;
+	background: white;
+	height: 400px;
+	text-align: justify;
+
+
+}
+
+
 #scroll{
-	padding: 10px;
+	padding: 20px;
 }
 
-#scroll article aside img{
-	width: 100%;
-	border: 5px solid white;
-}
 
-#scroll article aside h1{
+#scroll #cuadro aside h1{
 	width: 100%;
 	padding: 10px 20px;
 	color: #666;
 }
 
-#scroll article aside p{
+#scroll #cuadro aside p{
+	position: relative;
+	top: 5px;
 	font-size: 14px;
-	padding: 0px 20px;
-}
-
-#scroll article aside button{
-	float: right;
-	margin: 20px;
-	font-size: 12px;
-	border:0px;
-	background: #333;
-	color: white;
-	padding: 10px 20px;
-	cursor: pointer;
-
+	padding: 10px;
+	text-align: justify;
 }
 
 @media(max-width: 500px){
