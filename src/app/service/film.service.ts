@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
 
 @Injectable()
 
-export class ServiceContain{
+export class ServiceFilm{
 
      /* Prueba de servicio 
 
@@ -24,16 +24,15 @@ export class ServiceContain{
 
      constructor(private _http:Http){
 
-         this.url = "http://ghibliapi.herokuapp.com/people";
+         this.url = "http://ghibliapi.herokuapp.com/films";
 
      }
 
-     tomarJsonContainer(){
+     tomarJsonFilm(){
 
           return this._http.get(this.url).pipe(map(resultado => resultado.json()));
 
 
      }
-
 
 }

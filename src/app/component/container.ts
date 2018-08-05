@@ -34,7 +34,6 @@ export class ContainerComponent {
                },
                error => {
                     var mensajeError = <any>error;
-               }
                     
 
           });
@@ -42,3 +41,4 @@ export class ContainerComponent {
 
      }
 
+}
