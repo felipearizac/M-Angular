@@ -1,9 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import {HttpModule} from '@angular/http';
+
 import { AppComponent } from './app.component';
 
-import { IndexComponent } from './component/index';
+import { IndexComponent } from './component';
 import { SlideComponent } from './component/slide';
 import { ContainerComponent} from './component/container';
 import { FooterComponent } from './component/footer';
@@ -17,7 +19,8 @@ import { FooterComponent } from './component/footer';
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, 
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
