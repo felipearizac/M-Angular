@@ -1,30 +1,35 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div class="wrapper">
+<div class="content-fluid">
 
-     <header id="cabezote">
-       
-       <div class="black" id="nav">
-         <a href="javascript:void(0)" id="close" class="close" onclick="closeNav()"></a>
-         <a class="cool-link" href="#Home">Home</a>
-         <a class="cool-link" href="#About">About</a>
-         <a class="cool-link" href="#Contact">Contact</a>
-   
-       </div>
-   
-       <span id="open" class="open" onclick="openNav()">&#9776;</span>
-   
-       <div class="logo" id="logo">
-           LOGO
-       </div>
-   
-     </header>
+    <header id="cabezote" class="row">
+
+        <div class="black">
+    
+            <span id="open" class="open" onclick="openNav()"><a href="#cabezote">&#9776;</a></span>
+    
+         </div>
+        
+        <div class="col-lg-1 col-md-2 col-sm-1 col-xs-12">
+          <br>
+        </div>
+    
+        <nav class=" col-lg-9 col-md-7 col-sm-8 col-xs-0">
+          
+          <ul>
+            <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#"> Home</a></li>
+            <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#container"> Actor</a></li>
+            <li class="col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#scroll"> Films</a></li>
+
+          </ul>
+        </nav>
+      </header>
      
      <!-- Slide-->
 
      <tag-slide></tag-slide>
-   
-     <tag-container></tag-container>
 
+     <tag-container></tag-container>
+  
      <tag-scroll></tag-scroll>
    
     <tag-footer></tag-footer>

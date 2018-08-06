@@ -7,7 +7,9 @@ import { AppComponent } from './app.component';
 
 import { IndexComponent } from './component';
 import { SlideComponent } from './component/slide';
-import { ContainerComponent} from './component/container';
+import { ContainerComponent} from 
+'./component/container';
+import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { ScrollComponent } from './component/scroll';
 import { FooterComponent } from './component/footer';
  
@@ -22,6 +24,7 @@ import { FooterComponent } from './component/footer';
   ],
   imports: [
     BrowserModule, 
+    Ng2CarouselamosModule,
     HttpModule
   ],
   providers: [],

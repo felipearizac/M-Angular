@@ -1,44 +1,23 @@
-<h1 class= "row titulos" id="inicioScroll">Species</h1>
+<h1 class= "row titulos" id="container">Actor</h1>
 
+<div id="slide" class="row">
+		<ul id="contain">
+			<li *ngFor="let people of containerJson;  let img = index" value="{{img+1}}">
+             <img class="efecto" src="http://placehold.it/600x400/CCB03A/fff&text=Image+1" alt="Image 1"  >
+				<div class="textoSlide">
+					<h1>{{people.name}}</h1>
+                    <h3>{{people.gender}}</h3>
+                    <h3>{{people.age}}</h3>
+                </div>
+			</li>
+		</ul>
+	
 
-<div id="scroll">
-		<article class="row">
-        <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
-            <br>
-        </div> 
-        <div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
-            <h1>Lorem Ipsum</h1>
-  
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla animi nisi sequi explicabo laudantium atque ratione porro?</p>
-        </div>
-    </article>
-    <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
-        <br>
-    </div> 
+        
+		<div class= "flechas" id="retroceder"><span class="fa fa-chevron-left"></span></div>
+		<div class= "flechas" id="avanzar"><span class="fa fa-chevron-right"></span></div>
+	
+		
+    </div>
     
-    <article class="row" *ngFor="let people of containerJson" >
-        <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
-            <br>
-        </div> 
-        <div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
-            <h1>Lorem Ipsum</h1>
-  
-            <p></p>
-        </div>
-    </article>
-    <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
-        <br>
-    </div> 
     
-    <article class="row">
-        <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
-            <br>
-        </div> 
-        <div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
-            <h1>Lorem Ipsum</h1>
-  
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla animi nisi sequi explicabo laudantium atque ratione porro?</p>
-        </div>
-    </article>
-    
-</div>

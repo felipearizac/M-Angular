@@ -1,26 +1,30 @@
 <!--=============================================
 	=            Efecto scroll			           =
 	=============================================-->
-	<h1 class= "row titulos" id="inicioScroll">Films</h1>
 
-	<div id="scroll" class="row" >
-			<div id="cuadro"  *ngFor="let films of FilmJson">
-				<div class="col-lg-1 col-md-2 col-sm-1 col-xs-0">
-					<br>
-				</div> 
-				
-				<aside class="col-lg-9 col-md-8 col-sm-10 col-xs-12">
+	<h1 class= "row titulos" id="scroll">Films</h1>
+	
+	<div id="scroll">
+		<article class="row" *ngFor="let films of FilmJson">
+	
+			<div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
+				<br>
+			</div> 
+			<aside class="col-lg-4 col-md-8 col-sm-10 col-xs-12">
 							
-					<div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
-						<h1>{{films.title}}</h1>
-						<p>{{films.producer}}</p>
-						<p>{{films.release_date}}</p>
-						<div id="description">{{films.description}}</div>
+				<div class="col-lg-9 col-md-7 col-sm-6 col-xs-12">
+					<h1>{{films.title}}</h1>
+					<p>{{films.director}}</p>
+					<p>{{films.procure}}</p>
+					<p>{{films.description}}</p>
+				</div>
+			
+			</aside>
+		
+			<div class="col-lg-2 col-md-2 col-sm-1 col-xs-0">
+				<br>
+			</div>
 						
-					</div>
-				</aside>
-				
+		</article>
+			
 		</div>
-						
-				
-	</div>

@@ -1,3 +1,7 @@
+/*=============================================
+GLOBAL
+=============================================*/
+
 *{
 	margin:0px;
 	padding:0px;
@@ -29,61 +33,43 @@
 	padding:0px;
 }
 
-h1{
-	display: inline-block;
-	position: relative;
-}
-
 h1.titulos{
+	background: white;
 	text-align: center;
-}
-h1.titulos::after, h1.titulos::before{
-	content:'';
-	position: absolute;
-	background: #000;
-	width: 180px;
-	height: 3px;
 	color: #666;
 	font-weight: 100;
-	top: 20px;
+	position: relative;
+	padding: 40px;
 }
 
-h1.titulos::after{
-	left: 450px;
+h1.titulos hr{
+	margin:20px;
+	border:1px solid #ddd;
 }
-
-h1.titulos::before{
-	right: 450px;
-}
-
+/*=============================================
+CABEZOTE
+=============================================*/
 
 
-html, body{
-
-	margin:0;
-	padding: 0;
-	width: 100%;
-}
-
-body{
-	font-family: sans-serif;
-}
-
-header{
-	width: 100%;
-	height: 100vh;
-	background: #fff no-repeat 50% 50%;
-	background-size: cover;
-	z-index: 10;
-
-}
-
-.ancho-letra{
-	top:  300px;
-	position: absolute;
-	width: 50%;
+header #logotipo {
+	padding: 20px;
 	text-align: center;
+}
 
+header nav{
+	position: relative;
+	top: 0;
+	left: 250px;
+}
+
+header nav ul li a{
+	display: block;
+	background: #fff;
+	margin-left: 20%;
+	text-align: center;
+	padding: 10px;
+	color:#000;
+	font-size: 20px;
 	
 }
 
@@ -115,102 +101,131 @@ header{
 	text-align: center;
 }
 
-.logo{
-
-	position: fixed;
-	float: left;
-	margin:40px 110px;
-	color:#000;
-	font-weight: bold;
-	font-size: 24px;
-	z-index: 4;
-}
-/*Menu*/
-.open {
-	color: #000;
-	font-size: 30px;
-	float: left;
-	margin:  1em 0 0 1em;
-	cursor: pointer;
-	z-index: 10;
-	display: none;
-}
-
-.nav{
-	width: 0;
-	overflow-x:  hidden;
-	height: 100vh;
-	z-index: 6;
-	position: fixed;
-	background: rgba(34, 65, 93, .6);
-	transition: .1s;
-	display: block;
-}
-
-.nav a{
-	color: #fff;
-	font-size: 20px;
-	text-decoration: none;
-	display: block;
-	font-family: sans-serif;
-	padding: 1em 0;
+.ancho-letra{
+	top:  200px;
+	position: absolute;
+	width: 50%;
 	text-align: center;
-	transition: .3s; 
-	clear: left;
+
 }
 
-span{
-	position: fixed;
-	z-index: 5;
+/*Container people*/
+
+
+/*=============================================
+Slideshow
+=============================================*/
+#slide{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	overflow: hidden;
+
 }
-.close{
+#slide ul{
+	position: relative;
+	width: 1100%;
+	height: auto;
+	margin: auto;
+	left: 0%;
+	clear: both;
+	display: table;
+	
+
+}
+
+#slide ul li{
+	position: relative;
+	width:2%;
 	float: left;
-	margin: 1em 0 0 1em;
+	margin: 13px;
+	left: 45px;
+	padding: 20px;	
 }
 
-.nav a:not(:first-child):hover{
-	background: #b37020;
+#slide ul li img{
+	width: 100%;
+
 }
 
+#slide .flechas{
+	position: absolute;
+	font-size: 2em;
+	color: #333;
+	cursor: pointer;
+	z-index: 2;
 
+}
+
+#slide #retroceder{
+	top: 45%;
+	left: 2%;
+}
+
+#slide #avanzar{
+	top: 45%;
+	right: 2%;
+}
+
+#slide ul li .textoSlide{
+	position: absolute;
+	width: 93%;
+	bottom: 15px;
+	left: 12px;
+	text-align: center;
+	z-index: 1;
+	color: white;
+	transition: .5s ease;
+	opacity:0;
+}
+
+#slide ul li .textoSlide h1{
+	font-size: 20px;
+	background: rgba(0,0,0,.5);
+	padding: 2px 0;
+}
+
+#slide ul li .textoSlide h3{
+	font-size: 12px;
+	background: rgba(0,0,0,.5);
+}
+ 
+#slide ul li:hover .textoSlide  {
+	opacity: 1;
+   }
 
 /**/
-
-
-#img{
-	width: 100%;
-	height:70%;
-	margin: 50px;
-	z-index: 0;
-
-}
 
 #left img{
 	position: absolute;
 	width: 35%;
-	right: 0;
-	top: 0;
+	left: 65%;
+	top: -160px;
 	z-index: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+
 }
 
 #rigth img{
-	position: absolute;
+	position: relative;
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 35%;
-	right:250px;
-	top: 150px;
+	left:700px;
+	top: 2px;
 	z-index: 0;
 
 }
 
 /*Clase a remplazar*/
 
-.black{
+.black {
 	position: absolute;
-	left: 490px;
-	top: 70px;
-	
+	left: 50px;
+	top: 60px;
+	font-size: 25px;
+	display: none;	
 
 }
 
@@ -223,6 +238,11 @@ span{
 	padding: 0 20px;
 	display: inline-block;
 
+}
+
+.black a:hover{
+	text-decoration: none;
+	transition: top .110s;
 }
 
 .cool-link::after{
@@ -249,32 +269,39 @@ span{
 	color: #fff;
 	display: none;
 }
+
+/*Slider*/
+
+
+
+
 /*=============================================
 		Efecto scroll
-=============================================*/
+=============================================
+*/
 
-#scroll #cuadro {
+
+#scroll article {
 	width: 30%;
-	height: 60%;
+	height: 40%;
 	display: inline-block;
-	
+	position: relative;
 }
 
-#scroll #cuadro aside{
-	border:0.5px solid silver;
+#scroll article aside{
+	border: 0.5px solid silver;
 	margin: 10px;
 	width: 80%;
 	left: 100px;
 	position: relative;
 	background: white;
 	height: 400px;
-	overflow: hidden;
-
 }
 
-#scroll #cuadro aside div{
+#scroll article aside div{
 	width: 90%;
 	position: absolute;
+	top: 80px;
 	left: 20px;
 	right: 0;
 	background: white;
@@ -284,23 +311,15 @@ span{
 
 }
 
-
-#scroll{
-	padding: 20px;
-}
-
-
-#scroll #cuadro aside h1{
+#scroll article aside h1{
 	width: 100%;
-	padding: 10px 20px;
 	color: #666;
 }
 
-#scroll #cuadro aside p{
+#scroll article aside p{
 	position: relative;
-	top: 5px;
 	font-size: 14px;
-	padding: 10px;
+	padding: 5px;
 	text-align: justify;
 }
 
