@@ -67,7 +67,6 @@ header nav ul li a{
 	background: #fff;
 	margin-left: 20%;
 	text-align: center;
-	padding: 10px;
 	color:#000;
 	font-size: 20px;
 	
@@ -200,6 +199,7 @@ Slideshow
 	position: absolute;
 	width: 35%;
 	left: 65%;
+	height: 180%;
 	top: -160px;
 	z-index: 0;
 	background-size: cover;
@@ -209,11 +209,7 @@ Slideshow
 
 #rigth img{
 	position: relative;
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 35%;
-	left:700px;
-	top: 2px;
+	left: 650px;
 	z-index: 0;
 
 }
@@ -246,6 +242,8 @@ Slideshow
 }
 
 .cool-link::after{
+	position: absolute;
+	top: 80px;
 	content: '';
 	display: block;
 	width: 0;
@@ -255,24 +253,9 @@ Slideshow
 }
 
 .cool-link:hover::after{
-	width: 100%;
+	width: 1%;
 	transition: width .3s;
 }
-
-.menu-icon{
-	width: 100%;
-	background: #000;
-	text-align: right;
-	box-sizing: border-box;
-	padding: 15px 24px;
-	cursor: pointer;
-	color: #fff;
-	display: none;
-}
-
-/*Slider*/
-
-
 
 
 /*=============================================
@@ -370,11 +353,6 @@ Slideshow
 		background: green;
 		color:#f8f6e9}
 
-
-
-
-
-	
 }
 
 /*=============================================
